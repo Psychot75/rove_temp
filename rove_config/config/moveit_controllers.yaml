@@ -1,0 +1,30 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_trajectory_controller
+    - Flippers_controller
+
+  # Your custom arm trajectory controller node
+  arm_trajectory_controller:
+    # override the namespace where MoveIt will send FollowJointTrajectory goals
+    action_ns: kinova_arm/joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RoveCore_Joint1
+      - ArmBase_Revolute-51
+      - ArmSectionA_Joint3
+      - ArmSectionB_Joint4
+      - ArmSectionC_Joint5
+      - ArmSectionD_Joint6
+
+  Flippers_controller:
+    type: FollowJointTrajectory
+    joints:
+      - RoveCore_FlipperBLJoint
+      - RoveCore_FlipperBRJoint
+      - RoveCore_FlipperFLJoint
+      - RoveCore_FlipperFRJoint

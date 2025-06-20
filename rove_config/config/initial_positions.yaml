@@ -1,0 +1,13 @@
+# Default initial positions for rove_full_low_res's ros2_control fake system
+
+initial_positions:
+  ArmBase_Revolute-51: 0
+  ArmSectionA_Joint3: 0
+  ArmSectionB_Joint4: 0
+  ArmSectionC_Joint5: 0
+  ArmSectionD_Joint6: 0
+  RoveCore_FlipperBLJoint: 0
+  RoveCore_FlipperBRJoint: 0
+  RoveCore_FlipperFLJoint: 0
+  RoveCore_FlipperFRJoint: 0
+  RoveCore_Joint1: 0

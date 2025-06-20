@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rove_full_low_res">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import rove_full_low_res urdf file -->
+    <xacro:include filename="$(find rove_description)/urdf/rove_full_low_res.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="rove_full_low_res.ros2_control.xacro" />
+
+
+    <xacro:rove_full_low_res_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

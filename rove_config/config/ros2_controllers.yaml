@@ -1,0 +1,42 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    Arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    Flippers_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+Arm_controller:
+  ros__parameters:
+    joints:
+      - RoveCore_Joint1
+      - ArmBase_Revolute-51
+      - ArmSectionA_Joint3
+      - ArmSectionB_Joint4
+      - ArmSectionC_Joint5
+      - ArmSectionD_Joint6
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+Flippers_controller:
+  ros__parameters:
+    joints:
+      - RoveCore_FlipperBLJoint
+      - RoveCore_FlipperBRJoint
+      - RoveCore_FlipperFLJoint
+      - RoveCore_FlipperFRJoint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

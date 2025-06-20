@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rove_description
+    relative_path: urdf/rove_full_low_res.urdf
+  srdf:
+    relative_path: config/rove_full_low_res.srdf
+  package_settings:
+    author_name: etardif
+    author_email: etienne.tardif.2@ens.etsmtl.ca
+    generated_timestamp: 1749934834
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

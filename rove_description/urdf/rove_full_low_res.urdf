@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rove_full_low_res">
+    <link name="FlipperBL">
+        <inertial>
+            <origin xyz="0.12159582122141516 0.10168343253448005 0.025000000000000005" rpy="0.0 -0.0 0.0" />
+            <mass value="29.29052518083931" />
+            <inertia ixx="0.2910866181633136" iyy="0.3900292627096684" izz="0.6689114953809776" ixy="-0.27678423112892325" iyz="2.7755575615628914e-17" ixz="0.0" />
+        </inertial>
+        <visual name="FlipperBL_visual">
+            <origin xyz="-0.2968589956864575 -0.06317629882966745 0.0" rpy="-1.5707963267948966 -0.0 -0.08726646259971632" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperBL.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="FlipperBL_collision">
+            <origin xyz="-0.2968589956864575 -0.06317629882966745 0.0" rpy="-1.5707963267948966 -0.0 -0.08726646259971632" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperBL.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="FlipperFL">
+        <inertial>
+            <origin xyz="-0.12125352408730372 0.10209137142127311 0.025" rpy="0.0 -0.0 0.0" />
+            <mass value="29.2905251808393" />
+            <inertia ixx="0.29237999451611363" iyy="0.38873588635686396" izz="0.6689114953809892" ixy="0.27701228827613233" iyz="2.7755575615628914e-17" ixz="0.0" />
+        </inertial>
+        <visual name="FlipperFL_visual">
+            <origin xyz="0.3063762811858175 -0.0623436438703893 -8.881784197001253e-18" rpy="-1.5707963267948966 -0.0 0.08726646259971638" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperFL.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="FlipperFL_collision">
+            <origin xyz="0.3063762811858175 -0.0623436438703893 -8.881784197001253e-18" rpy="-1.5707963267948966 -0.0 0.08726646259971638" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperFL.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="FlipperBR">
+        <inertial>
+            <origin xyz="0.1215958212214153 -0.10168343253448012 0.02500000000000007" rpy="0.0 -0.0 0.0" />
+            <mass value="29.29052518083931" />
+            <inertia ixx="0.2910866181633107" iyy="0.3900292627096622" izz="0.6689114953809678" ixy="0.2767842311289228" iyz="8.881784197001252e-16" ixz="0.0" />
+        </inertial>
+        <visual name="FlipperBR_visual">
+            <origin xyz="-0.2968589956864576 0.06317629882966747 -0.418" rpy="1.5707963267948966 -0.0 0.08726646259971636" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperBR.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="FlipperBR_collision">
+            <origin xyz="-0.2968589956864576 0.06317629882966747 -0.418" rpy="1.5707963267948966 -0.0 0.08726646259971636" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperBR.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="FlipperFR">
+        <inertial>
+            <origin xyz="-0.12125352408730372 -0.10209137142127314 0.02500000000000007" rpy="0.0 -0.0 0.0" />
+            <mass value="29.2905251808393" />
+            <inertia ixx="0.29237999451608143" iyy="0.3887358863568302" izz="0.6689114953809954" ixy="-0.27701228827613233" iyz="0.0" ixz="8.881784197001252e-16" />
+        </inertial>
+        <visual name="FlipperFR_visual">
+            <origin xyz="0.30637628118581733 0.06234364387038916 -0.418" rpy="1.5707963267948966 -0.0 -0.08726646259971639" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperFR.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="FlipperFR_collision">
+            <origin xyz="0.30637628118581733 0.06234364387038916 -0.418" rpy="1.5707963267948966 -0.0 -0.08726646259971639" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/FlipperFR.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="TopBox">
+        <inertial>
+            <origin xyz="3.552713678800501e-17 -4.146828338491559e-09 0.06581575918302096" rpy="0.0 -0.0 0.0" />
+            <mass value="96.40121826749832" />
+            <inertia ixx="0.7585335063712897" iyy="1.0461368392347783" izz="1.5262819900577664" ixy="8.881784197001252e-16" iyz="1.7763568394002505e-15" ixz="-8.881784197001252e-16" />
+        </inertial>
+        <visual name="TopBox_visual">
+            <origin xyz="-0.209 0.31570997 -0.27868861" rpy="0.0 -0.0 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/TopBox.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="TopBox_collision">
+            <origin xyz="-0.209 0.31570997 -0.27868861" rpy="0.0 -0.0 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/TopBox.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmBase">
+        <inertial>
+            <origin xyz="-0.00013606355325087804 0.01657163505224524 0.05804777995982253" rpy="0.0 -0.0 0.0" />
+            <mass value="6.7545205940294775" />
+            <inertia ixx="0.017104166308066437" iyy="0.01517862348614507" izz="0.009498114793283552" ixy="1.5810979551389437e-05" iyz="-0.0034950167374411256" ixz="2.8696278390971663e-05" />
+        </inertial>
+        <visual name="ArmBase_visual">
+            <origin xyz="0.40171020285820613 -0.20664929379471153 -0.259" rpy="6.173301504223946e-17 6.072753714006385e-17 0.008210442388665778" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmBase.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmBase_collision">
+            <origin xyz="0.40171020285820613 -0.20664929379471153 -0.259" rpy="6.173301504223946e-17 6.072753714006385e-17 0.008210442388665778" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmBase.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmSectionA">
+        <inertial>
+            <origin xyz="0.1579891032905889 -3.552713678800501e-16 0.025077496294956952" rpy="0.0 -0.0 0.0" />
+            <mass value="6.396156094543044" />
+            <inertia ixx="0.0032596370720983092" iyy="0.09582761322448707" izz="0.09588274002141617" ixy="-1.1102230246251565e-15" iyz="-5.551115123125783e-16" ixz="0.0023194508655053903" />
+        </inertial>
+        <visual name="ArmSectionA_visual">
+            <origin xyz="-0.3927698912750465 -0.378 -0.2732339921582292" rpy="1.5707963267948966 0.00821044238866564 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionA.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmSectionA_collision">
+            <origin xyz="-0.3927698912750465 -0.378 -0.2732339921582292" rpy="1.5707963267948966 0.00821044238866564 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionA.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmSectionB">
+        <inertial>
+            <origin xyz="-0.017849007491051998 0.0 0.03779063134551585" rpy="0.0 -0.0 0.0" />
+            <mass value="3.2157885894035196" />
+            <inertia ixx="0.0024413319966500877" iyy="0.003866343551161111" izz="0.0035609359073050535" ixy="2.4980018054066027e-16" iyz="5.551115123125784e-17" ixz="0.0008295182515410814" />
+        </inertial>
+        <visual name="ArmSectionB_visual">
+            <origin xyz="0.7020700410350835 -0.378 0.2492441619583238" rpy="-1.5707963267948966 0.00821044238866591 -1.1102604465006027e-16" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionB.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmSectionB_collision">
+            <origin xyz="0.7020700410350835 -0.378 0.2492441619583238" rpy="-1.5707963267948966 0.00821044238866591 -1.1102604465006027e-16" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionB.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmSectionC">
+        <inertial>
+            <origin xyz="7.105427357601002e-17 0.004949483193104314 0.1865782854939781" rpy="3.038581678643135e-64 -0.0 0.0" />
+            <mass value="5.889654425673101" />
+            <inertia ixx="0.08542983391771675" iyy="0.08550696486907808" izz="0.0028521934194545304" ixy="-2.2204460492503136e-16" iyz="-0.0044164929169711615" ixz="6.661338147750941e-16" />
+        </inertial>
+        <visual name="ArmSectionC_visual">
+            <origin xyz="0.37799999999999956 0.21129573878964278 -0.7659377974765399" rpy="-1.5707963267948608 1.562585884406231 1.5707963267949099" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionC.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmSectionC_collision">
+            <origin xyz="0.37799999999999956 0.21129573878964278 -0.7659377974765399" rpy="-1.5707963267948608 1.562585884406231 1.5707963267949099" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionC.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmSectionD">
+        <inertial>
+            <origin xyz="-0.029632059801461993 2.1316282072803005e-16 -0.008621445623248434" rpy="0.0 -0.0 0.0" />
+            <mass value="2.0771391836268105" />
+            <inertia ixx="0.0011423755129120199" iyy="0.00247668255940503" izz="0.002561926425206252" ixy="-1.054711873393899e-15" iyz="-1.6653345369377353e-16" ixz="0.00040929731281363923" />
+        </inertial>
+        <visual name="ArmSectionD_visual">
+            <origin xyz="1.0982797974765388 -0.3779999999999994 0.21402447878964267" rpy="-1.5707963267948966 -0.008210442388665678 1.366659615041774e-16" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionD.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmSectionD_collision">
+            <origin xyz="1.0982797974765388 -0.3779999999999994 0.21402447878964267" rpy="-1.5707963267948966 -0.008210442388665678 1.366659615041774e-16" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionD.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ArmSectionE">
+        <inertial>
+            <origin xyz="1.4210854715202004e-16 -0.00017118928473184526 0.02084929946077736" rpy="0.0 -0.0 0.0" />
+            <mass value="1.4461659101100297" />
+            <inertia ixx="0.0007179779890870153" iyy="0.0007179981350707856" izz="0.0010168152596525264" ixy="1.1129985821867197e-13" iyz="-2.453641322369694e-06" ixz="1.898481372109018e-14" />
+        </inertial>
+        <visual name="ArmSectionE_visual">
+            <origin xyz="0.37800000000004674 0.21462174950553956 -1.1710242404262494" rpy="-1.5707963267952678 1.562585884406228 1.5707963267954739" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionE.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ArmSectionE_collision">
+            <origin xyz="0.37800000000004674 0.21462174950553956 -1.1710242404262494" rpy="-1.5707963267952678 1.562585884406228 1.5707963267954739" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/ArmSectionE.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="RoveCore">
+        <inertial>
+            <origin xyz="-0.0074736754331069105 0.20900969545201392 0.0955665967564817" rpy="0.0 0.0 0.0" />
+            <mass value="457.3497231349485" />
+            <inertia ixx="7.782169575736962" iyy="22.605491420218968" izz="27.42576921205052" ixy="0.001752398827628343" iyz="-0.000529541103382769" ixz="0.10195558201393629" />
+        </inertial>
+        <visual name="RoveCore_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/RoveCore.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="RoveCore_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://rove_description/meshes/RoveCore.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="RoveCore_TopBox" type="fixed">
+        <origin xyz="0.31570997 0.209 0.27868861" rpy="0.0 -0.0 1.5707963267948966" />
+        <parent link="RoveCore" />
+        <child link="TopBox" />
+    </joint>
+    <joint name="RoveCore_FlipperBLJoint" type="continuous">
+        <origin xyz="0.29022317999999997 0.0 0.08880886" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="RoveCore" />
+        <child link="FlipperBL" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="RoveCore_FlipperBRJoint" type="continuous">
+        <origin xyz="0.29022317999999997 0.418 0.08880886" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="RoveCore" />
+        <child link="FlipperBR" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="RoveCore_FlipperFRJoint" type="continuous">
+        <origin xyz="-0.29977682 0.418 0.08880886" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="RoveCore" />
+        <child link="FlipperFR" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="RoveCore_FlipperFLJoint" type="continuous">
+        <origin xyz="-0.29977682 0.0 0.08880886" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="RoveCore" />
+        <child link="FlipperFL" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="RoveCore_Joint1" type="continuous">
+        <origin xyz="-0.4 0.20994051 0.259" rpy="0.0 -0.0 0.0" />
+        <parent link="RoveCore" />
+        <child link="ArmBase" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="ArmSectionA_Joint3" type="continuous">
+        <origin xyz="0.30511288000000003 0.0 -0.012495339999999971" rpy="3.141592653589793 1.7347234759768038e-18 1.232595164407831e-32" />
+        <parent link="ArmSectionA" />
+        <child link="ArmSectionB" />
+        <axis xyz="0.008210000000000004 0.0 0.9999660000000002" />
+    </joint>
+    <joint name="ArmSectionB_Joint4" type="continuous">
+        <origin xyz="-0.06723399999999999 0.0 0.050553720000000024" rpy="-1.5707963267948966 -4.276423536147513e-50 1.5707963267948966" />
+        <parent link="ArmSectionB" />
+        <child link="ArmSectionC" />
+        <axis xyz="2.4651065123444822e-32 -0.00821 0.9999660000000002" />
+    </joint>
+    <joint name="ArmSectionC_Joint5" type="continuous">
+        <origin xyz="0.0 -0.0027287399999999453 0.33234199999999986" rpy="-1.5707963267948966 1.5707963267948966 0" />
+        <parent link="ArmSectionC" />
+        <child link="ArmSectionD" />
+        <axis xyz="0.008210000000000004 0.0 -0.9999660000000002" />
+    </joint>
+    <joint name="ArmSectionD_Joint6" type="continuous">
+        <origin xyz="-0.07280100999999987 0.0 0.0002520900000000381" rpy="1.5707963267948966 -1.5407439555097883e-33 -1.5707963267948966" />
+        <parent link="ArmSectionD" />
+        <child link="ArmSectionE" />
+        <axis xyz="-1.2649507874735366e-35 -0.008210000000000004 0.9999660000000002" />
+    </joint>
+    <joint name="ArmBase_Revolute-51" type="continuous">
+        <origin xyz="-0.0004931100000000299 0.060057469999999995 0.11600000000000002" rpy="-1.5707963267948966 -1.232595164407831e-32 -3.7488939637457184e-33" />
+        <parent link="ArmBase" />
+        <child link="ArmSectionA" />
+        <axis xyz="-0.00821 0.0 0.999966" />
+    </joint>
+</robot>
